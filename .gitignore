@@ -27,6 +27,9 @@ __pycache__/
 Thumbs.db
 ehthumbs.db
 
+# Django stuff:
+*.log
+
 # Folder config file
 Desktop.ini
 
