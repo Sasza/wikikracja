@@ -7,43 +7,42 @@ from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
 
-def home(request):
+def interested_act(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/index.html',
+        'app/interested.html',
         context_instance = RequestContext(request,
         {
-            'title':'Home Page',
+            'title':'Which Act are you interested in?',
             'year':datetime.now().year,
         })
     )
 
-def contact(request):
+def vote_act(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/contact.html',
+        'app/vote.html',
         context_instance = RequestContext(request,
         {
-            'title':'Contact',
-            'message':'Your contact page.',
+            'title':'Vote the act',
             'year':datetime.now().year,
         })
     )
 
-def about(request):
+def results(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/about.html',
+        'app/results.html',
         context_instance = RequestContext(request,
         {
-            'title':'About',
-            'message':'Your application description page.',
+            'title':'See how you have voted and how the envoys did.',
+            'message':'Votes.',
             'year':datetime.now().year,
         })
     )

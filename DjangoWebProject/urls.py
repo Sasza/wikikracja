@@ -13,9 +13,9 @@ from app.forms import BootstrapAuthenticationForm
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'app.views.home', name='home'),
-    url(r'^contact$', 'app.views.contact', name='contact'),
-    url(r'^about', 'app.views.about', name='about'),
+    url(r'^$', 'app.views.interested_act', name='interested_act'),
+    url(r'^contact$', 'app.views.vote_act', name='vote_act'),
+    url(r'^about', 'app.views.results', name='results'),
     url(r'^login/$',
         'django.contrib.auth.views.login',
         {
