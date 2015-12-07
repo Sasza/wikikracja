@@ -30,6 +30,9 @@ ehthumbs.db
 # Django stuff:
 *.log
 
+# SQLite database file
+*.sqlite3
+
 # Folder config file
 Desktop.ini
 
